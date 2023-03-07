@@ -1,0 +1,15 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+}
+
+.Header__links {
+    display: flex;
+    gap: 0.5rem
+}
+
+.Header__links > a {
+    font-weight: bold;
+}
