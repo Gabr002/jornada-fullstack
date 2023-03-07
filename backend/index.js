@@ -19,7 +19,7 @@ const DB_URL =
     const app = express();  
 
     // Habilita o CORS
-    app.use((cors));
+    app.use(cors());
   
     // O que vier no body da requisição, está em JSON
     app.use(express.json());
