@@ -5,34 +5,49 @@ import {  useEffect,  useState } from "react";
 // Mock: Itens (exatamente a mesma estrutura que o Back traria)
 const itensMock = [
   {
-    _id: "63fd2d7b4cf68a3ed17dd781",
-    nome: "Filipe Ret",
-    imagemURL: "https://www.tupi.fm/wp-content/uploads/2022/07/ret.jpg",
-    tags: ["Status: Cantor", "Origem: Brasileira"]
+    "_id": "63fd2d7b4cf68a3ed17dd781",
+    "nome": "Filipe Ret",
+    "imagemURL": "https://www.tupi.fm/wp-content/uploads/2022/07/ret.jpg",
+    "tags": [
+      "Status: Cantor",
+      "Origem: Brasileira"
+    ]
   },
   {
-    _id: "6400d4059946791cb8d1f1b9",
-    nome: "L7nnon",
-    imagemURL: "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/11/L7NNON-1.jpg",
-    tags: ["Status: Cantor", "Origem: Brasileira"]
+    "_id": "6400d4059946791cb8d1f1b9",
+    "nome": "L7nnon",
+    "imagemURL": "https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2020/11/L7NNON-1.jpg",
+    "tags": [
+      "Status: Cantor",
+      "Origem: Brasileira"
+    ]
   },
   {
-    _id: "6400d4179946791cb8d1f1ba",
-    nome: "30praum",
-    imagemURL: "https://rapforte.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-01-at-21.18.02.jpeg",
-    tags: ["Status: Cantor", "Origem: Brasileira"]
+    "_id": "6400d4179946791cb8d1f1ba",
+    "nome": "30praum",
+    "imagemURL": "https://rapforte.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-01-at-21.18.02.jpeg",
+    "tags": [
+      "Status: Cantores",
+      "Origem: Brasileira"
+    ]
   },
   {
-    _id: "6400d4919946791cb8d1f1bb",
-    nome: "Lil Gabi",
-    imagemURL: "https://colunadofla.com/wp-content/uploads/2021/12/Gabigol-faz-show-durante-ferias.jpg",
-    tags: ["Status: Cantor", "Origem: Brasileira"]
+    "_id": "6400d4919946791cb8d1f1bb",
+    "nome": "Lil Gabi",
+    "imagemURL": "https://colunadofla.com/wp-content/uploads/2021/12/Gabigol-faz-show-durante-ferias.jpg",
+    "tags": [
+      "Status: Cantor",
+      "Origem: Brasileira"
+    ]
   },
   {
-    _id: "6400d4a29946791cb8d1f1bc",
-    nome: "Lucas Alves",
-    imagemURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCOZIAwqaTAj9Ba2VpYoM0NY8V2fu3djqIpNEV2gPkzyCSqpEPW-xJvgEP0w5ZWMqqnw&usqp=CAU",
-    tags: ["Status: Músico", "Origem: Brasileira"]
+    "_id": "6400d4a29946791cb8d1f1bc",
+    "nome": "Lucas Alves",
+    "imagemURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCOZIAwqaTAj9Ba2VpYoM0NY8V2fu3djqIpNEV2gPkzyCSqpEPW-xJvgEP0w5ZWMqqnw&usqp=CAU",
+    "tags": [
+      "Status: Músico",
+      "Origem: Brasileira"
+    ]
   }
 ];
 
@@ -68,7 +83,7 @@ function ReadAll(){
       const url = "http://localhost:3000/item";
       const response = await fetch(url);
       const data = await response.json();
-       
+
       setItens(data); 
 
     }
