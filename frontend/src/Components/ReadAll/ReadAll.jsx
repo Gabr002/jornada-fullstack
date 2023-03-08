@@ -1,6 +1,6 @@
 import "./ReadAll.css"
 import Card from "../Card/Card";
-import { useEffect, useState } from "react";
+import {  useEffect,  useState } from "react";
 
 // Mock: Itens (exatamente a mesma estrutura que o Back traria)
 const itensMock = [
@@ -68,25 +68,20 @@ function ReadAll(){
       const url = "http://localhost:3000/item";
       const response = await fetch(url);
       const data = await response.json();
-    
-      console.log(data);   
-      
-      // itens.push({ teste: 1 });
-      
+       
       setItens(data); 
-      
-      console.log(62, itens);
-      /* 
-      React, renderiza tudo novamente, porque a lista mudou.
-       */
+
     }
 
+    // useEffect
+    // 1: Uma função que será executada
+    // 2: Uma linha de dependências
     // console.log("Antes de chamar a função `realizarRequisição()`.");
     useEffect(function(){
       realizarRequisicao();
     }, []);
     // console.log("Após de chamar a função `realizarRequisição()`.");
-    console.log(67, itens);
+    // console.log(67, itens);
 
     return ( 
         <div className="ReadAll">

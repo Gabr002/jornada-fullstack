@@ -6,7 +6,7 @@ import './index.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render( //Criando o elemento de react na raiz da pagina...
-  // <React.StrictMode>
+  <React.StrictMode>
     <App />
-  // </React.StrictMode>
+  </React.StrictMode>
 )
