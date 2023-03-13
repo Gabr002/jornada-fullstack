@@ -1,6 +1,7 @@
-import './App.css'
-import Header from './Components/Header/Header'
-import ReadAll from './Components/ReadAll/ReadAll'
+import './App.css';
+import Header from './Components/Header/Header';
+import ReadAll from './Components/ReadAll/ReadAll';
+import ReadById from './Components/ReadById/ReadById';
 
 // You Tube do prof: Paulo Salvatore
 /**
@@ -18,9 +19,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ReadAll />  
+      {/* <ReadAll />   */}
+      <ReadById />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
