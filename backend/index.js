@@ -68,7 +68,7 @@ const DB_URL =
   
       // console.log(id, body);
   
-      await collection.updateOne({ _id: new ObjectId(id) }, { $set: body });
+      await collection.updateOne({ _id: id }, { $set: body });
   
       res.send(body);
     });

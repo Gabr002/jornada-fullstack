@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <ReadAll />   */}
-      <ReadById />
+      <ReadAll />  
+      {/* <ReadById  /> */}
     </div>
   );
 }
