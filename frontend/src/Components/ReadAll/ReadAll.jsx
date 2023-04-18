@@ -81,7 +81,8 @@ function ReadAll(){
   // Realizar requisição para o backend obtendo a lista de itens
     async function realizarRequisicao(){ 
       // const url = "http://localhost:3000/item"; // URL put
-      const url = "https://ocean-jornada-fullstack-fev-23.onrender.com/item"; // atualizei link novamente para o ReadAll     
+      // const url = "https://ocean-jornada-fullstack-fev-23.onrender.com/item"; // atualizei link novamente para o ReadAll     
+      const url = "https://gabr002.github.io/jornada-fullstack/";
       const response = await fetch(url);
       const data = await response.json();
 
